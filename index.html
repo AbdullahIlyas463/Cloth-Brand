@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CHANGE: Brand name + website title -->
+    <title>NOIRÉ | Modern Fashion</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+                        ANNOUNCEMENT BAR
+    ================================================== -->
+
+    <div class="announcement">
+
+        <!-- CHANGE: Announcement text -->
+        FREE SHIPPING ON ORDERS ABOVE PKR 5,000
+        &nbsp; • &nbsp;
+        NEW COLLECTION NOW LIVE
+
+    </div>
+
+
+
+    <!-- ==================================================
+                        NAVBAR
+    ================================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+
+            <!-- CHANGE: Brand name -->
+
+            <a href="#home" class="logo">
+                NOIRÉ
+            </a>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#new">
+                        New Arrivals
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#collections">
+                        Collections
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#lookbook">
+                        Lookbook
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-icons">
+
+                <button onclick="openSearch()">
+                    🔍
+                </button>
+
+                <button onclick="showBag()">
+                    🛍️
+                    <span id="bagCount">0</span>
+                </button>
+
+            </div>
+
+
+            <div class="menu-btn"
+                 onclick="toggleMenu()">
+
+                ☰
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ==================================================
+                        SEARCH OVERLAY
+    ================================================== -->
+
+    <div class="search-overlay"
+         id="searchOverlay">
+
+        <button class="close-search"
+                onclick="closeSearch()">
+
+            ×
+
+        </button>
+
+
+        <div class="search-box">
+
+            <p>
+                SEARCH THE COLLECTION
+            </p>
+
+            <input type="text"
+                   id="searchInput"
+                   placeholder="Search products..."
+                   onkeyup="searchProducts()">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+                        HERO
+    ================================================== -->
+
+    <section id="home"
+             class="hero">
+
+
+        <div class="hero-content">
+
+
+            <!-- CHANGE -->
+
+            <p class="hero-small">
+                THE NEW STANDARD
+            </p>
+
+
+            <!-- CHANGE -->
+
+            <h1>
+                Dress Like
+                <br>
+                <span>You Mean It.</span>
+            </h1>
+
+
+            <!-- CHANGE -->
+
+            <p class="hero-text">
+
+                Contemporary fashion designed
+                for those who believe that
+                confidence is the best outfit.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#new"
+                   class="dark-btn">
+
+                    Shop New Arrivals
+
+                </a>
+
+
+                <a href="#collections"
+                   class="outline-btn">
+
+                    Explore Collection
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        BRAND INTRO
+    ================================================== -->
+
+    <section class="brand-intro">
+
+
+        <div>
+
+            <p class="section-label">
+                OUR PHILOSOPHY
+            </p>
+
+            <!-- CHANGE -->
+
+            <h2>
+                Fashion isn't just
+                what you wear.
+                <i>It's who you become.</i>
+            </h2>
+
+        </div>
+
+
+        <div>
+
+            <!-- CHANGE -->
+
+            <p>
+
+                NOIRÉ is a contemporary fashion
+                label created for modern individuals.
+                We combine timeless silhouettes,
+                premium fabrics and modern design
+                to create pieces you'll want to wear
+                again and again.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        NEW ARRIVALS
+    ================================================== -->
+
+    <section id="new"
+             class="products-section">
+
+
+        <div class="section-top">
+
+            <div>
+
+                <p class="section-label">
+                    JUST DROPPED
+                </p>
+
+                <h2>
+                    New Arrivals
+                </h2>
+
+            </div>
+
+
+            <a href="#collections"
+               class="view-link">
+
+                View All →
+
+            </a>
+
+        </div>
+
+
+
+        <div class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+
+                <div class="product-image">
+
+                    <!-- CHANGE: Product image -->
+
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80"
+                         alt="Black outfit">
+
+
+                    <span class="product-tag">
+                        NEW
+                    </span>
+
+
+                    <button class="quick-add"
+                            onclick="addToBag()">
+
+                        ADD TO BAG
+
+                    </button>
+
+                </div>
+
+
+                <!-- CHANGE -->
+
+                <h3>
+                    Noir Signature Blazer
+                </h3>
+
+                <!-- CHANGE -->
+
+                <p>
+                    PKR 12,500
+                </p>
+
+            </div>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <!-- CHANGE -->
+
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80"
+                         alt="Fashion dress">
+
+                    <span class="product-tag">
+                        NEW
+                    </span>
+
+                    <button class="quick-add"
+                            onclick="addToBag()">
+
+                        ADD TO BAG
+
+                    </button>
+
+                </div>
+
+
+                <!-- CHANGE -->
+
+                <h3>
+                    Signature Satin Dress
+                </h3>
+
+                <!-- CHANGE -->
+
+                <p>
+                    PKR 9,800
+                </p>
+
+            </div>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <!-- CHANGE -->
+
+                    <img src="https://images.unsplash.com/photo-1506629905607-d9d2b4f0a5d5?auto=format&fit=crop&w=900&q=80"
+                         alt="Fashion clothing">
+
+                    <span class="product-tag">
+                        TRENDING
+                    </span>
+
+                    <button class="quick-add"
+                            onclick="addToBag()">
+
+                        ADD TO BAG
+
+                    </button>
+
+                </div>
+
+
+                <!-- CHANGE -->
+
+                <h3>
+                    Essential Linen Set
+                </h3>
+
+                <!-- CHANGE -->
+
+                <p>
+                    PKR 8,500
+                </p>
+
+            </div>
+
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <!-- CHANGE -->
+
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80"
+                         alt="Fashion collection">
+
+                    <span class="product-tag">
+                        NEW
+                    </span>
+
+                    <button class="quick-add"
+                            onclick="addToBag()">
+
+                        ADD TO BAG
+
+                    </button>
+
+                </div>
+
+
+                <!-- CHANGE -->
+
+                <h3>
+                    Urban Oversized Shirt
+                </h3>
+
+                <!-- CHANGE -->
+
+                <p>
+                    PKR 6,500
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        COLLECTIONS
+    ================================================== -->
+
+    <section id="collections"
+             class="collections">
+
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                EXPLORE
+            </p>
+
+            <h2>
+                Our Collections
+            </h2>
+
+        </div>
+
+
+        <div class="collection-grid">
+
+
+            <!-- COLLECTION 1 -->
+
+            <a href="#new"
+               class="collection-card">
+
+                <!-- CHANGE IMAGE -->
+
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80"
+                     alt="Women's collection">
+
+                <div class="collection-overlay">
+
+                    <!-- CHANGE -->
+
+                    <h3>
+                        WOMEN
+                    </h3>
+
+                    <span>
+                        SHOP COLLECTION →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- COLLECTION 2 -->
+
+            <a href="#new"
+               class="collection-card">
+
+                <!-- CHANGE IMAGE -->
+
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80"
+                     alt="Men's collection">
+
+                <div class="collection-overlay">
+
+                    <!-- CHANGE -->
+
+                    <h3>
+                        MEN
+                    </h3>
+
+                    <span>
+                        SHOP COLLECTION →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- COLLECTION 3 -->
+
+            <a href="#new"
+               class="collection-card">
+
+                <!-- CHANGE IMAGE -->
+
+                <img src="https://images.unsplash.com/photo-1496217590455-aa63a8350eea?auto=format&fit=crop&w=1200&q=80"
+                     alt="New collection">
+
+                <div class="collection-overlay">
+
+                    <!-- CHANGE -->
+
+                    <h3>
+                        ESSENTIALS
+                    </h3>
+
+                    <span>
+                        SHOP COLLECTION →
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        FEATURE BANNER
+    ================================================== -->
+
+    <section class="feature-banner">
+
+
+        <div class="feature-content">
+
+            <!-- CHANGE -->
+
+            <p>
+                THE SIGNATURE EDIT
+            </p>
+
+            <!-- CHANGE -->
+
+            <h2>
+                Timeless.
+                <br>
+                Effortless.
+                <br>
+                <i>Yours.</i>
+            </h2>
+
+
+            <a href="#new"
+               class="white-btn">
+
+                Discover The Edit
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        LOOKBOOK
+    ================================================== -->
+
+    <section id="lookbook"
+             class="lookbook">
+
+
+        <div class="section-top">
+
+            <div>
+
+                <p class="section-label">
+                    VISUAL STORY
+                </p>
+
+                <h2>
+                    The Lookbook
+                </h2>
+
+            </div>
+
+            <!-- CHANGE: Instagram link -->
+
+            <a href="https://www.instagram.com/"
+               target="_blank"
+               class="view-link">
+
+                @noirefashion →
+
+            </a>
+
+        </div>
+
+
+
+        <div class="lookbook-grid">
+
+
+            <!-- CHANGE ALL IMAGES -->
+
+            <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=700&q=80"
+                 alt="Fashion look">
+
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80"
+                 alt="Fashion look">
+
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=700&q=80"
+                 alt="Fashion look">
+
+            <img src="https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=700&q=80"
+                 alt="Fashion look">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        ABOUT BRAND
+    ================================================== -->
+
+    <section id="about"
+             class="about-section">
+
+
+        <div class="about-image">
+
+            <!-- CHANGE -->
+
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80"
+                 alt="Our fashion store">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="section-label">
+                OUR STORY
+            </p>
+
+
+            <!-- CHANGE -->
+
+            <h2>
+                Designed with
+                <i>intention.</i>
+            </h2>
+
+
+            <!-- CHANGE -->
+
+            <p>
+
+                NOIRÉ was born from a simple idea:
+                create clothing that feels as good
+                as it looks.
+
+            </p>
+
+
+            <!-- CHANGE -->
+
+            <p>
+
+                Every piece is thoughtfully designed
+                with attention to fabric, fit and detail.
+                Our goal is simple — create fashion
+                that becomes part of your everyday story.
+
+            </p>
+
+
+            <a href="#contact"
+               class="dark-btn">
+
+                Learn More
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        WHY US
+    ================================================== -->
+
+    <section class="values">
+
+
+        <div class="value">
+
+            <span>
+                01
+            </span>
+
+            <h3>
+                Premium Quality
+            </h3>
+
+            <p>
+                Carefully selected fabrics
+                and quality craftsmanship.
+            </p>
+
+        </div>
+
+
+        <div class="value">
+
+            <span>
+                02
+            </span>
+
+            <h3>
+                Timeless Design
+            </h3>
+
+            <p>
+                Pieces designed to remain
+                relevant beyond trends.
+            </p>
+
+        </div>
+
+
+        <div class="value">
+
+            <span>
+                03
+            </span>
+
+            <h3>
+                Made For You
+            </h3>
+
+            <p>
+                Fashion created for
+                confidence and individuality.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        SIZE GUIDE
+    ================================================== -->
+
+    <section class="size-section">
+
+
+        <div>
+
+            <p class="section-label">
+                FIND YOUR FIT
+            </p>
+
+            <h2>
+                Size Guide
+            </h2>
+
+            <p>
+                Not sure about your size?
+                Use our simple size guide
+                before placing your order.
+            </p>
+
+        </div>
+
+
+        <div class="size-table">
+
+            <table>
+
+                <tr>
+                    <th>Size</th>
+                    <th>Chest</th>
+                    <th>Waist</th>
+                    <th>Length</th>
+                </tr>
+
+                <!-- CHANGE: Measurements -->
+
+                <tr>
+                    <td>S</td>
+                    <td>36"</td>
+                    <td>30"</td>
+                    <td>27"</td>
+                </tr>
+
+                <tr>
+                    <td>M</td>
+                    <td>38"</td>
+                    <td>32"</td>
+                    <td>28"</td>
+                </tr>
+
+                <tr>
+                    <td>L</td>
+                    <td>40"</td>
+                    <td>34"</td>
+                    <td>29"</td>
+                </tr>
+
+                <tr>
+                    <td>XL</td>
+                    <td>42"</td>
+                    <td>36"</td>
+                    <td>30"</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        CONTACT
+    ================================================== -->
+
+    <section id="contact"
+             class="contact-section">
+
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Visit Our Store
+            </h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-details">
+
+
+                <!-- CHANGE: Address -->
+
+                <div>
+
+                    <span>
+                        STORE
+                    </span>
+
+                    <p>
+                        MM Alam Road,
+                        Lahore, Pakistan
+                    </p>
+
+                </div>
+
+
+                <!-- CHANGE: Phone -->
+
+                <div>
+
+                    <span>
+                        PHONE
+                    </span>
+
+                    <p>
+                        +92 300 1234567
+                    </p>
+
+                </div>
+
+
+                <!-- CHANGE: Email -->
+
+                <div>
+
+                    <span>
+                        EMAIL
+                    </span>
+
+                    <p>
+                        hello@noirefashion.com
+                    </p>
+
+                </div>
+
+
+                <!-- CHANGE: Opening hours -->
+
+                <div>
+
+                    <span>
+                        HOURS
+                    </span>
+
+                    <p>
+                        Monday - Saturday
+                        <br>
+                        11:00 AM - 9:00 PM
+                    </p>
+
+                </div>
+
+
+                <div class="socials">
+
+                    <!-- CHANGE: Social links -->
+
+                    <a href="https://www.instagram.com/"
+                       target="_blank">
+
+                        Instagram
+
+                    </a>
+
+                    <a href="https://www.facebook.com/"
+                       target="_blank">
+
+                        Facebook
+
+                    </a>
+
+                    <a href="https://www.tiktok.com/"
+                       target="_blank">
+
+                        TikTok
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- GOOGLE MAP -->
+
+            <div class="map">
+
+                <!-- CHANGE:
+                     Replace this with client's Google Maps
+                     embed URL.
+                -->
+
+                <iframe src="https://www.google.com/maps?q=MM+Alam+Road+Lahore&output=embed"
+                        loading="lazy"
+                        allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        NEWSLETTER
+    ================================================== -->
+
+    <section class="newsletter">
+
+
+        <p class="section-label">
+            STAY IN THE LOOP
+        </p>
+
+
+        <h2>
+            Join The NOIRÉ List
+        </h2>
+
+
+        <p>
+            Get early access to new collections,
+            exclusive offers and more.
+        </p>
+
+
+        <form onsubmit="subscribe(event)">
+
+            <input type="email"
+                   placeholder="Your email address"
+                   required>
+
+            <button type="submit">
+
+                JOIN
+
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        WHATSAPP
+    ================================================== -->
+    <!-- CHANGE: WhatsApp number -->
+
+    <a href="https://wa.me/923001234567"
+       target="_blank"
+       class="whatsapp">
+
+        💬
+
+    </a>
+
+
+
+    <!-- ==================================================
+                        FOOTER
+    ================================================== -->
+
+    <footer>
+
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <!-- CHANGE -->
+
+                <h2>
+                    NOIRÉ
+                </h2>
+
+                <p>
+
+                    Modern fashion for
+                    modern individuals.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    SHOP
+                </h4>
+
+                <a href="#new">
+                    New Arrivals
+                </a>
+
+                <a href="#collections">
+                    Collections
+                </a>
+
+                <a href="#lookbook">
+                    Lookbook
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    INFORMATION
+                </h4>
+
+                <a href="#about">
+                    About Us
+                </a>
+
+                <a href="#">
+                    Shipping
+                </a>
+
+                <a href="#">
+                    Returns
+                </a>
+
+                <a href="#">
+                    Size Guide
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    CONTACT
+                </h4>
+
+                <!-- CHANGE -->
+
+                <a href="tel:+923001234567">
+                    +92 300 1234567
+                </a>
+
+                <!-- CHANGE -->
+
+                <a href="mailto:hello@noirefashion.com">
+                    hello@noirefashion.com
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <!-- CHANGE -->
+
+            <p>
+                © 2026 NOIRÉ. All Rights Reserved.
+            </p>
+
+
+            <p>
+                Designed with intention.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
